@@ -1,8 +1,10 @@
 import scss from "./index.module.scss";
 import Image from "next/image";
+import { FC } from "react";
+import { FooterProps } from "./types";
 
-const Footer = () => (
-  <footer className={scss.footer}>
+const Footer: FC<FooterProps> = ({ className }) => (
+  <footer className={`${scss.footer} ${className && className}`}>
     <a
       href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
       target="_blank"

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import BaseLayout from "../../layout/BaseLayout";
+import { Footer } from "../../components";
 
 const ProjectPage: NextPage = () => {
   return (

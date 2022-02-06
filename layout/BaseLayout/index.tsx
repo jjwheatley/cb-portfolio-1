@@ -1,12 +1,8 @@
 import { FC } from "react";
 import Head from "next/head";
-
-interface BaseLayoutProps {
-  head: {
-    title: string;
-    description: string;
-  };
-}
+import { Footer } from "../../components";
+import scss from "./index.module.scss";
+import { BaseLayoutProps } from "./types";
 
 const BaseLayout: FC<BaseLayoutProps> = ({ children, head }) => (
   <>
@@ -15,9 +11,9 @@ const BaseLayout: FC<BaseLayoutProps> = ({ children, head }) => (
       <meta name="description" content={head.description} />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <header>Header</header>
-    <main>{children}</main>
-    <footer>Footer</footer>
+    <header className={scss.header}>Header</header>
+    <main className={scss.main}>{children}</main>
+    <Footer className={scss.footer} />
   </>
 );
 
