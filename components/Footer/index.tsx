@@ -4,6 +4,7 @@ import { FC } from "react";
 import { FooterProps } from "./types";
 
 const Footer: FC<FooterProps> = ({ className }) => (
+  //ToDo: Replace placeholder components
   <footer className={`${scss.footer} ${className && className}`}>
     <a
       href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
