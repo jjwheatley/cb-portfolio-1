@@ -11,7 +11,7 @@ const BaseLayout: FC<BaseLayoutProps> = ({ children, head }) => (
       <meta name="description" content={head.description} />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <header className={scss.header}>Header</header>
+    <header className={scss.header}>Placeholder Header</header>
     <main className={scss.main}>{children}</main>
     <Footer className={scss.footer} />
   </>
